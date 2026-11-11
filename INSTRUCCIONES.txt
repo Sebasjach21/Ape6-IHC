@@ -1,0 +1,18 @@
+APE6 Fase 1 - Tu parte: Seis tareas de usabilidad
+Issue: https://github.com/Sebasjach21/Ape6-IHC/issues/3
+
+Pasos:
+1. Clona o actualiza el repo:
+   git clone https://github.com/Sebasjach21/Ape6-IHC.git
+   cd Ape6-IHC
+2. Crea tu rama desde main:
+   git checkout main
+   git pull
+   git checkout -b aporte/julio-jacho
+3. Copia el archivo "docs/tareas-usabilidad.md" de este paquete dentro de la carpeta docs/ del repo (reemplaza el que ya existe).
+4. Revisa el contenido y ajusta si hace falta.
+5. Sube tu rama:
+   git add docs/tareas-usabilidad.md
+   git commit -m "Agrega las seis tareas de usabilidad de la Fase 1"
+   git push -u origin aporte/julio-jacho
+6. GitHub abre el pull request automaticamente y lo enlaza al issue #3. Espera la revision del equipo.
