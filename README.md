@@ -26,7 +26,7 @@ Práctica del grupo de Interacción Humano-Computador, FISEI, Universidad Técni
 
 1. Crea tu propia rama a partir de `main` con el nombre sugerido en tu issue (por ejemplo `aporte/oscar-riofrio`).
 2. Copia el archivo que te corresponde (ver tabla de arriba) dentro de la carpeta `docs/` de tu rama, reemplazando el que ya existe si hace falta.
-3. Sube tu rama (`git push`). Un flujo automático de GitHub Actions abre el pull request hacia `main` y lo enlaza con tu issue.
+3. Sube tu rama (`git push`). GitHub te muestra un botón **Compare & pull request**: ábrelo hacia `main`, pega la descripción de tu PR (con `Closes #` y el número de tu issue) y crea el pull request.
 4. Espera la revisión del equipo antes de que se fusione.
 
 No es necesario crear carpetas con tu nombre: todo se guarda dentro de `docs/` con el nombre de archivo que ya está preparado.
