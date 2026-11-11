@@ -1,0 +1,57 @@
+name: Preparar equipo
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+concurrency:
+  group: preparar-equipo
+  cancel-in-progress: false
+
+jobs:
+  configurar:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+      GH_REPO: ${{ github.repository }}
+    steps:
+      - name: Crear los cuatro issues de la Fase 1 (sin crear ramas; cada responsable crea la suya)
+        shell: python
+        run: |
+          import json
+          import subprocess
+
+          def gh(*args):
+              return subprocess.check_output(['gh', *args], text=True).strip()
+
+          tareas = [
+              ('Cristian Ango', 'aporte/cristian-ango', 'Plan de evaluación',
+               'Pegar docs/plan-evaluacion.md con el objeto, la pregunta de evaluación, los métodos, los participantes, las métricas y reglas, los roles, la ética y los criterios de validación de la Fase 1.'),
+              ('Oscar Riofrio', 'aporte/oscar-riofrio', 'Consentimiento informado',
+               'Pegar docs/consentimiento-informado.md con el texto de consentimiento y el registro de aceptación anonimizado (solo códigos P1, P2, P3; ningún nombre real).'),
+              ('Julio Jacho', 'aporte/julio-jacho', 'Seis tareas de usabilidad',
+               'Pegar docs/tareas-usabilidad.md con las seis tareas, su meta, tiempo máximo, criterio de éxito observable y respuesta correcta.'),
+              ('Matias Morales', 'aporte/matias-morales', 'Hoja de observación y SUS',
+               'Pegar docs/hoja-observacion-sus.md con la plantilla de hoja de observación por participante y el cuestionario SUS.'),
+          ]
+          existentes = json.loads(gh('issue', 'list', '--state', 'all', '--limit', '1000', '--json', 'title,number'))
+          titulos = {issue['title'] for issue in existentes}
+          for nombre, rama, tarea, criterio in tareas:
+              titulo = f'APE6 Fase 1: {nombre} — {tarea}'
+              if titulo not in titulos:
+                  cuerpo = (
+                      f'Responsable: {nombre}\n\n'
+                      f'Rama sugerida (créala tú mismo/a a partir de main): `{rama}`\n\n'
+                      f'{criterio}\n\n'
+                      'Entregar mediante un pull request hacia `main`. No usar carpetas con nombres de integrantes: '
+                      'el archivo va dentro de `docs/` con el nombre ya preparado.'
+                  )
+                  print(gh('issue', 'create', '--title', titulo, '--body', cuerpo))
+              else:
+                  print(f'Issue existente: {nombre}')
