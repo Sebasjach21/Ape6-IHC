@@ -1,4 +1,4 @@
-# Evaluación heurística individual — Cristian Ango
+# Evaluación heurística individual — Oscar Riofrio
 
 Prototipo: CaféU v3 (`prototipo/cafeu-v3.html`, repo HCI2026-GV, carpeta `APE4-integral/`).
 
