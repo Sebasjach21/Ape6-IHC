@@ -17,16 +17,24 @@ Práctica del grupo de Interacción Humano-Computador, FISEI, Universidad Técni
 
 | Archivo | Contenido |
 | --- | --- |
-| `docs/plan-evaluacion.md` | Plan completo de la Fase 1 |
-| `docs/consentimiento-informado.md` | Texto de consentimiento y registro de aceptación anonimizado |
-| `docs/tareas-usabilidad.md` | Las seis tareas con meta, tiempo máximo, criterio de éxito y respuesta correcta |
-| `docs/hoja-observacion-sus.md` | Plantilla de hoja de observación por participante y cuestionario SUS |
+| `Fase1-Planificacion/Plan_Evaluacion.md` | Plan completo de la Fase 1 |
+| `Fase1-Planificacion/Consentimiento_Informado.md` | Texto de consentimiento y registro de aceptación anonimizado |
+| `Fase1-Planificacion/Seis_Tareas.md` | Las seis tareas con meta, tiempo máximo, criterio de éxito y respuesta correcta |
+| `Fase1-Planificacion/Hoja_Observacion_SUS.md` | Plantilla de hoja de observación por participante y cuestionario SUS |
 
 ## Cómo entregar tu parte
 
 1. Crea tu propia rama a partir de `main` con el nombre sugerido en tu issue (por ejemplo `aporte/oscar-riofrio`).
-2. Copia el archivo que te corresponde (ver tabla de arriba) dentro de la carpeta `docs/` de tu rama, reemplazando el que ya existe si hace falta.
+2. Copia el archivo que te corresponde (ver tabla de arriba) dentro de la carpeta correspondiente de tu rama (`Fase1-Planificacion/`, `Fase2-Pilotaje/`, etc.), reemplazando el que ya existe si hace falta.
 3. Sube tu rama (`git push`). GitHub te muestra un botón **Compare & pull request**: ábrelo hacia `main`, pega la descripción de tu PR (con `Closes #` y el número de tu issue) y crea el pull request.
 4. Espera la revisión del equipo antes de que se fusione.
 
-No es necesario crear carpetas con tu nombre: todo se guarda dentro de `docs/` con el nombre de archivo que ya está preparado.
+No es necesario crear carpetas con tu nombre: cada archivo va en la carpeta de su fase con el nombre ya preparado.
+
+## Estructura del repositorio
+
+```
+Fase1-Planificacion/   Plan, consentimiento, seis tareas, hoja SUS e informe
+Fase2-Pilotaje/        Participantes (P1-P3), métricas, ajustes V1-V2, evaluaciones heurísticas, hallazgos
+Evidencias_Colaboracion/  Registro de aportes
+```
