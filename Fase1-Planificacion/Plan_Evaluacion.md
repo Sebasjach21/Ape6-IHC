@@ -24,7 +24,7 @@ Se aplican dos métodos que se complementan, tal como lo pide la guía de répli
 | Método | Tipo | Qué aporta |
 | --- | --- | --- |
 | Evaluación heurística (10 heurísticas de Nielsen) | Analítico | Los integrantes del grupo revisan el prototipo sin usuarios, anticipan problemas y explican qué principio se viola. |
-| Prueba con usuarios y pensamiento en voz alta | Empírico | Usuarios reales ejecutan las seis tareas de la [Tabla de tareas](tareas-usabilidad.md) mientras el grupo mide y observa. |
+| Prueba con usuarios y pensamiento en voz alta | Empírico | Usuarios reales ejecutan las seis tareas de la [Tabla de tareas](Seis_Tareas.md) mientras el grupo mide y observa. |
 
 Lo que ambos métodos encuentran en común es la evidencia más fuerte (triangulación); lo que solo encuentra uno se registra igual, pero con menor peso.
 
@@ -33,11 +33,11 @@ Lo que ambos métodos encuentran en común es la evidencia más fuerte (triangul
 - **Perfil:** estudiantes de la UTA que usarían CaféU para pedir en la cafetería. No participan integrantes del propio grupo.
 - **Número:** 3 personas para el pilotaje de la Fase 2 (5 es el ideal si el tiempo lo permite).
 - **Criterios de exclusión:** haber participado en el diseño o desarrollo del prototipo, conocer de antemano las seis tareas, ser menor de edad.
-- **Identificación:** únicamente los códigos **P1, P2, P3**. Ningún nombre real se sube al repositorio; la hoja de aceptación del consentimiento (ver [Consentimiento informado](consentimiento-informado.md)) se guarda solo con el código.
+- **Identificación:** únicamente los códigos **P1, P2, P3**. Ningún nombre real se sube al repositorio; la hoja de aceptación del consentimiento (ver [Consentimiento informado](Consentimiento_Informado.md)) se guarda solo con el código.
 
 ## 5. Tareas
 
-Las seis tareas, con su meta, tiempo máximo, criterio de éxito y respuesta correcta, están documentadas en [`docs/tareas-usabilidad.md`](tareas-usabilidad.md).
+Las seis tareas, con su meta, tiempo máximo, criterio de éxito y respuesta correcta, están documentadas en [`Seis_Tareas.md`](Seis_Tareas.md).
 
 ## 6. Métricas y reglas antes de probar
 
@@ -56,7 +56,7 @@ Reglas fijadas antes de probar:
 
 ## 7. Ética y consentimiento informado
 
-Antes de cada sesión el moderador lee en voz alta el texto de consentimiento (documento completo en [`docs/consentimiento-informado.md`](consentimiento-informado.md)): qué se evalúa (la aplicación, no la persona), cuántas tareas y minutos toma, que es voluntario y se puede detener en cualquier momento, qué se registra, que los datos se guardan únicamente con un código y si se graba la pantalla (solo con permiso explícito y sin publicarla). La aceptación se anota solo con el código del participante, nunca con su nombre.
+Antes de cada sesión el moderador lee en voz alta el texto de consentimiento (documento completo en [`Consentimiento_Informado.md`](Consentimiento_Informado.md)): qué se evalúa (la aplicación, no la persona), cuántas tareas y minutos toma, que es voluntario y se puede detener en cualquier momento, qué se registra, que los datos se guardan únicamente con un código y si se graba la pantalla (solo con permiso explícito y sin publicarla). La aceptación se anota solo con el código del participante, nunca con su nombre.
 
 ## 8. Roles del equipo durante la Fase 2
 
@@ -69,7 +69,7 @@ Antes de cada sesión el moderador lee en voz alta el texto de consentimiento (d
 
 ## 9. Hoja de observación
 
-El formato de la hoja de observación por participante, con el cuestionario SUS y la pregunta de cierre, está en [`docs/hoja-observacion-sus.md`](hoja-observacion-sus.md).
+El formato de la hoja de observación por participante, con el cuestionario SUS y la pregunta de cierre, está en [`Hoja_Observacion_SUS.md`](Hoja_Observacion_SUS.md).
 
 ## 10. Criterios de que el protocolo está listo para la Fase 2
 
@@ -84,7 +84,7 @@ El protocolo de la Fase 1 se considera listo para pasar a la Fase 2 (prueba con 
 ## Lista de entrega de la Fase 1
 
 - [x] Plan con objeto, pregunta, métodos, participantes, métricas, reglas, roles, ética y criterios de validación (este documento)
-- [ ] Consentimiento informado anonimizado — `docs/consentimiento-informado.md`
-- [ ] Seis tareas con meta, tiempo máximo, criterio de éxito y respuesta correcta — `docs/tareas-usabilidad.md`
-- [ ] Hoja de observación con el SUS — `docs/hoja-observacion-sus.md`
+- [ ] Consentimiento informado anonimizado — `Consentimiento_Informado.md`
+- [ ] Seis tareas con meta, tiempo máximo, criterio de éxito y respuesta correcta — `Seis_Tareas.md`
+- [ ] Hoja de observación con el SUS — `Hoja_Observacion_SUS.md`
 - [ ] Todo subido al repositorio del grupo, con commits de cada integrante
