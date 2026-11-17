@@ -1,40 +1,32 @@
-# APE 6 · Fase 1 — Planificación de la evaluación de usabilidad de CaféU
+# Parte de Matias Morales — APE 6 Fase 2
 
-Práctica del grupo de Interacción Humano-Computador, FISEI, Universidad Técnica de Ambato (Quinto semestre de Software, Paralelo A).
+Usuario GitHub: @MatiusJBG · Rol sugerido en las sesiones: Soporte técnico
 
-**APE 6:** Evaluación y validación · **Fase 1:** Planificación de la evaluación de usabilidad del prototipo construido en APE 4 ([CaféU](https://github.com/AdrianMora8/HCI2026-GV)).
+## Qué te toca
 
-## Equipo y aportes
+1. **Actividad 2:** en las sesiones dejas el prototipo en estado inicial (recargar `cafeu-v3.html`) antes de cada participante y controlas la grabación (solo con permiso, sin publicarla).
+2. **Actividad 3:** llenar el archivo individual de **P3** con los datos reales.
+3. **Actividad 5 — Ajustes del protocolo:** comparar resultados con los criterios de la Fase 1 y completar la tabla Versión 1 → Versión 2 (cada problema y su ajuste). *Necesita las métricas.*
+4. **Actividad 6:** tu evaluación heurística individual.
 
-| Integrante | Usuario | Issue | Aporte |
-| --- | --- | --- | --- |
-| Cristian Ango | [@CristianDDGA](https://github.com/CristianDDGA) | #1 | Plan de evaluación (objeto, pregunta, métodos, participantes, métricas, reglas, roles, ética, criterios de validación) |
-| Oscar Riofrio | [@AdrianMora8](https://github.com/AdrianMora8) | #2 | Consentimiento informado anonimizado |
-| Julio Jacho | [@Sebasjach21](https://github.com/Sebasjach21) | #3 | Seis tareas de usabilidad (meta, tiempo máximo, criterio de éxito, respuesta correcta) |
-| Matias Morales | [@MatiusJBG](https://github.com/MatiusJBG) | #4 | Hoja de observación con el cuestionario SUS |
+## Archivos de esta carpeta y dónde van en el repo
 
-## Entregables
+- `Fase2-Pilotaje/Participantes/P3.md` → reemplaza el existente
+- `Fase2-Pilotaje/Ajustes_Protocolo_V1_V2.md` → reemplaza el existente
+- `Fase2-Pilotaje/Evaluaciones_Heuristicas/Heuristica_Matias_Morales.md`
 
-| Archivo | Contenido |
-| --- | --- |
-| `Fase1-Planificacion/Plan_Evaluacion.md` | Plan completo de la Fase 1 |
-| `Fase1-Planificacion/Consentimiento_Informado.md` | Texto de consentimiento y registro de aceptación anonimizado |
-| `Fase1-Planificacion/Seis_Tareas.md` | Las seis tareas con meta, tiempo máximo, criterio de éxito y respuesta correcta |
-| `Fase1-Planificacion/Hoja_Observacion_SUS.md` | Plantilla de hoja de observación por participante y cuestionario SUS |
+Las rutas dentro de esta carpeta ya replican las del repo: copia el contenido a la raíz del repo respetando las carpetas.
 
-## Cómo entregar tu parte
 
-1. Crea tu propia rama a partir de `main` con el nombre sugerido en tu issue (por ejemplo `aporte/oscar-riofrio`).
-2. Copia el archivo que te corresponde (ver tabla de arriba) dentro de la carpeta correspondiente de tu rama (`Fase1-Planificacion/`, `Fase2-Pilotaje/`, etc.), reemplazando el que ya existe si hace falta.
-3. Sube tu rama (`git push`). GitHub te muestra un botón **Compare & pull request**: ábrelo hacia `main`, pega la descripción de tu PR (con `Closes #` y el número de tu issue) y crea el pull request.
-4. Espera la revisión del equipo antes de que se fusione.
+## Cómo subirlo
 
-No es necesario crear carpetas con tu nombre: cada archivo va en la carpeta de su fase con el nombre ya preparado.
-
-## Estructura del repositorio
-
+```bash
+git checkout main && git pull
+git checkout -b fase2/matiusjbg
+# copia tus archivos a las rutas indicadas arriba
+git add .
+git commit -m "Fase 2: aporte de Matias Morales"
+git push -u origin fase2/matiusjbg
 ```
-Fase1-Planificacion/   Plan, consentimiento, seis tareas, hoja SUS e informe
-Fase2-Pilotaje/        Participantes (P1-P3), métricas, ajustes V1-V2, evaluaciones heurísticas, hallazgos
-Evidencias_Colaboracion/  Registro de aportes
-```
+
+Abre el pull request hacia `main` y espera la revisión. Regla: **solo códigos P1–P3, ningún nombre real** de participantes.
