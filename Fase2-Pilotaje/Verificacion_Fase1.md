@@ -20,10 +20,13 @@ Revisión del repositorio antes del pilotaje (Actividad 1). Pre-llenada a partir
 | 3 | La hoja no pregunta si el participante **acepta la grabación de pantalla** | Hoja_Observacion_SUS.md |
 | 4 | La hoja no tiene la **pista única escrita** a la vista del moderador | Hoja_Observacion_SUS.md |
 
-Las hojas P1–P3 de la Fase 2 ya incorporan estos campos; si el pilotaje confirma que hacían falta, pasan a la tabla de ajustes V1 → V2.
+Estas brechas ya se corrigieron en `Hoja_Observacion_SUS.md` y en las hojas P1–P3, que incorporan estos campos; si el pilotaje confirma que hacían falta, pasan a la tabla de ajustes V1 → V2.
 
 ## Correcciones hechas al ordenar el repositorio
 
 - Se actualizaron los enlaces internos del plan, que apuntaban a `docs/…` y a nombres de archivo anteriores.
+- Se marcó como completa la lista de entrega del plan (los archivos existen).
+- Se retiraron los datos simulados de P1–P3, métricas, hallazgos y comparación: ahora son plantillas para datos reales. Los valores simulados siguen en el historial de git y **no deben citarse como resultados**.
+- Los perfiles simulados indicaban «no cumple el perfil» y «conoce el prototipo»; los participantes reales deben cumplir el perfil.
 
 Verificado por: Cristian Ango · Fecha: ______
