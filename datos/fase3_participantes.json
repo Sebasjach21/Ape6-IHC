@@ -1,0 +1,370 @@
+{
+  "_nota": "DATOS SIMULADOS. Reemplazar por las mediciones reales de las sesiones y ejecutar: python herramientas/generar_fase3_4.py",
+  "simulado": true,
+  "participantes": {
+    "P1": {
+      "fecha": "18/11/2026",
+      "inicio": "10:05",
+      "fin": "10:24",
+      "duracion_min": 19,
+      "edad": 20,
+      "carrera": "Contabilidad y Auditoría",
+      "conoce_prototipo": false,
+      "fallos_tecnicos": "Ninguno",
+      "tareas": {
+        "T1": [
+          "Sí",
+          16,
+          0,
+          0,
+          false,
+          false,
+          "Hay tres, el jugo dice agotado.",
+          "—"
+        ],
+        "T2": [
+          "Sí",
+          24,
+          0,
+          0,
+          false,
+          false,
+          "Ya está, me mandó a Mi pedido.",
+          "—"
+        ],
+        "T3": [
+          "Sí",
+          41,
+          0,
+          1,
+          false,
+          false,
+          "¿Me saca del menú cada vez que agrego algo?",
+          "Tras agregar fue a Mi pedido y tuvo que volver al menú para elegir la empanada."
+        ],
+        "T4": [
+          "Con ayuda",
+          134,
+          0,
+          2,
+          true,
+          true,
+          "¿Cómo así se agotó? Si decía que quedaban.",
+          "Al confirmar apareció que la empanada se agotó; volvió a confirmar sin cambiar nada y repitió el error. Resolvió tras la pista."
+        ],
+        "T5": [
+          "Sí",
+          21,
+          0,
+          0,
+          false,
+          false,
+          "Aquí, cambiar hora.",
+          "—"
+        ],
+        "T6": [
+          "Sí",
+          17,
+          0,
+          0,
+          false,
+          false,
+          "Me pregunta si estoy seguro, bien.",
+          "—"
+        ],
+        "T7": [
+          "Con ayuda",
+          98,
+          0,
+          2,
+          true,
+          false,
+          "Escribo cafe y no sale nada, qué raro.",
+          "Escribió «cafe» y «cafee»; tras la pista probó con tilde y apareció el producto."
+        ]
+      },
+      "sus": [
+        4,
+        2,
+        4,
+        1,
+        4,
+        2,
+        5,
+        2,
+        4,
+        2
+      ],
+      "cierre_confuso": "Que la empanada decía que quedaban pocas y al final no había.",
+      "cierre_mejor": "Cancelar el pedido y poder restaurarlo.",
+      "problemas": [
+        [
+          "Tras agregar un producto salta a Mi pedido",
+          "T3",
+          "¿Me saca del menú cada vez que agrego algo?",
+          "H3 / H7",
+          "H-08"
+        ],
+        [
+          "Empanada con «Quedan pocas unidades» se agota recién al confirmar",
+          "T4",
+          "¿Cómo así se agotó? Si decía que quedaban.",
+          "H5 / H9",
+          "H-02"
+        ],
+        [
+          "La búsqueda no encuentra «cafe» sin tilde",
+          "T7",
+          "Escribo cafe y no sale nada, qué raro.",
+          "H2 / H7",
+          "H-01"
+        ],
+        [
+          "No hay información de pago ni de lugar de retiro",
+          "T4",
+          "¿Dónde se retira y se paga?",
+          "H10",
+          "H-05"
+        ]
+      ]
+    },
+    "P2": {
+      "fecha": "18/11/2026",
+      "inicio": "11:10",
+      "fin": "11:33",
+      "duracion_min": 23,
+      "edad": 22,
+      "carrera": "Ingeniería Civil",
+      "conoce_prototipo": false,
+      "fallos_tecnicos": "Ninguno",
+      "tareas": {
+        "T1": [
+          "Sí",
+          22,
+          0,
+          0,
+          false,
+          false,
+          "Son cuatro, pero el jugo está agotado.",
+          "—"
+        ],
+        "T2": [
+          "Sí",
+          29,
+          0,
+          0,
+          false,
+          false,
+          "Agregado.",
+          "—"
+        ],
+        "T3": [
+          "Sí",
+          55,
+          0,
+          1,
+          false,
+          false,
+          "Yo iba a seguir agregando, no a ver el pedido.",
+          "Después de agregar el café fue a Mi pedido y regresó al menú."
+        ],
+        "T4": [
+          "Sí",
+          102,
+          0,
+          1,
+          false,
+          false,
+          "Mejor lo cambio por el sánduche.",
+          "Ante el error de la empanada eligió «Cambiar por Sanduche de queso» y confirmó de nuevo."
+        ],
+        "T5": [
+          "Sí",
+          30,
+          0,
+          0,
+          false,
+          false,
+          "Cambio a las doce.",
+          "—"
+        ],
+        "T6": [
+          "Sí",
+          26,
+          0,
+          0,
+          false,
+          false,
+          "Cancelado y puedo restaurarlo.",
+          "—"
+        ],
+        "T7": [
+          "No",
+          120,
+          1,
+          3,
+          false,
+          false,
+          "No hay café, entonces no existe en la app.",
+          "Probó «cafe», «cafe americano» y «americano» sin resultado; dejó de intentar al llegar al tiempo máximo creyendo que no había café."
+        ]
+      },
+      "sus": [
+        3,
+        3,
+        4,
+        2,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "cierre_confuso": "No poder buscar sin tilde y no saber dónde se paga.",
+      "cierre_mejor": "El flujo de confirmar y cambiar la hora.",
+      "problemas": [
+        [
+          "Tras agregar un producto salta a Mi pedido",
+          "T3",
+          "Yo iba a seguir agregando, no a ver el pedido.",
+          "H3 / H7",
+          "H-08"
+        ],
+        [
+          "Empanada con «Quedan pocas unidades» se agota al confirmar",
+          "T4",
+          "Mejor lo cambio por el sánduche.",
+          "H5 / H9",
+          "H-02"
+        ],
+        [
+          "La búsqueda no encuentra productos sin tilde",
+          "T7",
+          "No hay café, entonces no existe en la app.",
+          "H2 / H7",
+          "H-01"
+        ],
+        [
+          "No hay información de pago ni de lugar de retiro",
+          "T4",
+          "¿Y dónde pago?",
+          "H10",
+          "H-05"
+        ]
+      ]
+    },
+    "P3": {
+      "fecha": "18/11/2026",
+      "inicio": "12:00",
+      "fin": "12:21",
+      "duracion_min": 21,
+      "edad": 19,
+      "carrera": "Psicología",
+      "conoce_prototipo": false,
+      "fallos_tecnicos": "Ninguno",
+      "tareas": {
+        "T1": [
+          "Sí",
+          27,
+          0,
+          1,
+          false,
+          false,
+          "Cuatro… no, tres, el jugo no hay.",
+          "Contó primero el jugo agotado y se corrigió."
+        ],
+        "T2": [
+          "Sí",
+          19,
+          0,
+          0,
+          false,
+          false,
+          "Listo.",
+          "—"
+        ],
+        "T3": [
+          "Sí",
+          38,
+          0,
+          0,
+          false,
+          false,
+          "Agrego la empanada.",
+          "—"
+        ],
+        "T4": [
+          "Con ayuda",
+          141,
+          0,
+          2,
+          true,
+          true,
+          "Dice que no se envió, ¿y ahora?",
+          "No entendió que debía elegir una de las dos opciones del mensaje; pulsó Confirmar dos veces. Avanzó tras la pista."
+        ],
+        "T5": [
+          "Sí",
+          35,
+          0,
+          0,
+          false,
+          false,
+          "Aquí puedo cambiar la hora.",
+          "—"
+        ],
+        "T6": [
+          "Sí",
+          22,
+          0,
+          0,
+          false,
+          false,
+          "Sí, cancelar pedido.",
+          "—"
+        ],
+        "T7": [
+          "Sí",
+          47,
+          0,
+          0,
+          false,
+          false,
+          "Escribo café con tilde, como siempre.",
+          "—"
+        ]
+      },
+      "sus": [
+        4,
+        2,
+        5,
+        2,
+        4,
+        2,
+        4,
+        2,
+        4,
+        3
+      ],
+      "cierre_confuso": "El mensaje de que el pedido no se envió.",
+      "cierre_mejor": "Que es rápido y se entiende el menú.",
+      "problemas": [
+        [
+          "El error de producto agotado no deja claro qué hacer",
+          "T4",
+          "Dice que no se envió, ¿y ahora?",
+          "H9",
+          "H-02"
+        ],
+        [
+          "Un producto agotado (jugo) se cuenta como disponible al consultar el menú",
+          "T1",
+          "Cuatro… no, tres, el jugo no hay.",
+          "H1",
+          "H-11"
+        ]
+      ]
+    }
+  }
+}
