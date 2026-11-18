@@ -145,18 +145,25 @@ Versión independiente: [`Fase4-Cierre/Criterios_Tecnicos.md`](Fase4-Cierre/Crit
 
 | ID | Mejora | Hallazgo | Criterio | Prioridad | Severidad | Esfuerzo | Responsable | Issue |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| **B-01** | Normalizar la consulta y los textos del catálogo con `normalize('NFD')` y quitar marcas diacríticas antes de comparar. | H-01 | C-01 | **P1** | 4 · Crítico | Bajo | Julio Jacho | [B-01](https://github.com/Sebasjach21/Ape6-IHC/issues?q=B-01) |
-| **B-02** | Avisar en «Mi pedido», antes de confirmar, que el producto puede agotarse; si se agota, mostrar el conflicto sin pasar por «Procesando» y resaltar las dos salidas. | H-02 | C-02 | **P1** | 3 · Mayor | Medio | Cristian Ango | [B-02](https://github.com/Sebasjach21/Ape6-IHC/issues?q=B-02) |
-| **B-03** | Si existe un pedido confirmado y el carrito está vacío, mostrar una tarjeta con su número y un acceso a la confirmación. | H-03 | C-03 | **P2** | 3 · Mayor | Bajo | Oscar Riofrio | [B-03](https://github.com/Sebasjach21/Ape6-IHC/issues?q=B-03) |
-| **B-05** | Agregar un bloque con forma de pago, tiempo estimado y punto de retiro, acordado con la cafetería. | H-05 | C-05 | **P2** | 2 · Menor | Bajo | Oscar Riofrio | [B-05](https://github.com/Sebasjach21/Ape6-IHC/issues?q=B-05) |
-| **B-04** | Unificar los nombres: «Menú» para volver al menú y una sola entrada a «Mi pedido». | H-04 | C-04 | **P3** | 2 · Menor | Bajo | Matias Morales | [B-04](https://github.com/Sebasjach21/Ape6-IHC/issues?q=B-04) |
-| **B-06** | Generar las horas desde la hora actual hasta el cierre y deshabilitar las que ya pasaron. | H-06 | C-06 | **P3** | 2 · Menor | Medio | Matias Morales | [B-06](https://github.com/Sebasjach21/Ape6-IHC/issues?q=B-06) |
-| **B-08** | Permanecer en el detalle con un aviso y dos botones: «Seguir comprando» y «Ver pedido». | H-08 | C-08 | **P3** | 2 · Menor | Bajo | Cristian Ango | [B-08](https://github.com/Sebasjach21/Ape6-IHC/issues?q=B-08) |
-| **B-07** | Subir esos textos a 0,8125 rem (13 px) como mínimo y comprobar la legibilidad con zoom al 200 %. | H-07 | C-07 | **P4** | 1 · Cosmético | Bajo | Julio Jacho | [B-07](https://github.com/Sebasjach21/Ape6-IHC/issues?q=B-07) |
-| **B-09** | Mostrar «Máximo 9 por producto» y anunciarlo a lectores de pantalla. | H-09 | C-09 | **P4** | 1 · Cosmético | Bajo | Julio Jacho | [B-09](https://github.com/Sebasjach21/Ape6-IHC/issues?q=B-09) |
-| **B-10** | Escribir «Sánduche» en el catálogo y en todos los documentos, y combinarlo con la búsqueda sin tildes. | H-10 | C-10 | **P4** | 1 · Cosmético | Bajo | Oscar Riofrio | [B-10](https://github.com/Sebasjach21/Ape6-IHC/issues?q=B-10) |
+| **B-01** | Normalizar la consulta y los textos del catálogo con `normalize('NFD')` y quitar marcas diacríticas antes de comparar. | H-01 | C-01 | **P1** | 4 · Crítico | Bajo | Julio Jacho | [#25](https://github.com/Sebasjach21/Ape6-IHC/issues/25) |
+| **B-02** | Avisar en «Mi pedido», antes de confirmar, que el producto puede agotarse; si se agota, mostrar el conflicto sin pasar por «Procesando» y resaltar las dos salidas. | H-02 | C-02 | **P1** | 3 · Mayor | Medio | Cristian Ango | [#26](https://github.com/Sebasjach21/Ape6-IHC/issues/26) |
+| **B-03** | Si existe un pedido confirmado y el carrito está vacío, mostrar una tarjeta con su número y un acceso a la confirmación. | H-03 | C-03 | **P2** | 3 · Mayor | Bajo | Oscar Riofrio | [#27](https://github.com/Sebasjach21/Ape6-IHC/issues/27) |
+| **B-05** | Agregar un bloque con forma de pago, tiempo estimado y punto de retiro, acordado con la cafetería. | H-05 | C-05 | **P2** | 2 · Menor | Bajo | Oscar Riofrio | [#29](https://github.com/Sebasjach21/Ape6-IHC/issues/29) |
+| **B-04** | Unificar los nombres: «Menú» para volver al menú y una sola entrada a «Mi pedido». | H-04 | C-04 | **P3** | 2 · Menor | Bajo | Matias Morales | [#28](https://github.com/Sebasjach21/Ape6-IHC/issues/28) |
+| **B-06** | Generar las horas desde la hora actual hasta el cierre y deshabilitar las que ya pasaron. | H-06 | C-06 | **P3** | 2 · Menor | Medio | Matias Morales | [#30](https://github.com/Sebasjach21/Ape6-IHC/issues/30) |
+| **B-08** | Permanecer en el detalle con un aviso y dos botones: «Seguir comprando» y «Ver pedido». | H-08 | C-08 | **P3** | 2 · Menor | Bajo | Cristian Ango | [#32](https://github.com/Sebasjach21/Ape6-IHC/issues/32) |
+| **B-07** | Subir esos textos a 0,8125 rem (13 px) como mínimo y comprobar la legibilidad con zoom al 200 %. | H-07 | C-07 | **P4** | 1 · Cosmético | Bajo | Julio Jacho | [#31](https://github.com/Sebasjach21/Ape6-IHC/issues/31) |
+| **B-09** | Mostrar «Máximo 9 por producto» y anunciarlo a lectores de pantalla. | H-09 | C-09 | **P4** | 1 · Cosmético | Bajo | Julio Jacho | [#33](https://github.com/Sebasjach21/Ape6-IHC/issues/33) |
+| **B-10** | Escribir «Sánduche» en el catálogo y en todos los documentos, y combinarlo con la búsqueda sin tildes. | H-10 | C-10 | **P4** | 1 · Cosmético | Bajo | Oscar Riofrio | [#34](https://github.com/Sebasjach21/Ape6-IHC/issues/34) |
 
-Los Issues se publican con [`herramientas/crear_issues.ps1`](herramientas/crear_issues.ps1) a partir de los textos de [`Fase4-Cierre/issues/`](Fase4-Cierre/issues/).
+Los 10 Issues de mejora están publicados (#25 a #34); su texto está en [`Fase4-Cierre/issues/`](Fase4-Cierre/issues/). Además hay un Issue de tarea por integrante, que cierra su Pull Request:
+
+| Integrante | Issue de tarea | Rama |
+| --- | --- | --- |
+| Cristian Ango | [#21](https://github.com/Sebasjach21/Ape6-IHC/issues/21) | `cristian/f3-f4` |
+| Julio Jacho | [#22](https://github.com/Sebasjach21/Ape6-IHC/issues/22) | `julio/f3-f4` |
+| Matias Morales | [#23](https://github.com/Sebasjach21/Ape6-IHC/issues/23) | `matias/f3-f4` |
+| Oscar Riofrio | [#24](https://github.com/Sebasjach21/Ape6-IHC/issues/24) | `oscar/f3-f4` |
 
 ## 9. Evidencias y entregables
 
@@ -180,7 +187,7 @@ Los Issues se publican con [`herramientas/crear_issues.ps1`](herramientas/crear_
 | `Fase4-Cierre/` | Criterios técnicos, backlog y textos de los Issues |
 | `resultados/` | Heurísticas E1–E4, sesiones P1–P3, métricas, matriz y triangulación |
 | `datos/` | Mediciones de las sesiones (fuente de las tablas) |
-| `herramientas/` | `generar_fase3_4.py`, `crear_issues.ps1`, `md_a_pdf.py` |
+| `herramientas/` | `generar_fase3_4.py`, `md_a_pdf.py` |
 | `docs/` | Conclusiones |
 | `Evidencias_Colaboracion/` | Registro de aportes |
 

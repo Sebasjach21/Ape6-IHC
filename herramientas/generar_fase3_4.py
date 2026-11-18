@@ -165,6 +165,8 @@ CRITERIOS = {
              "Una búsqueda de «Sanduche» en el repositorio y en la app no encuentra variantes ortográficas."),
 }
 
+ISSUE_N = {f"H-{i:02d}": 24 + i for i in range(1, 11)}  # B-01 = #25 ... B-10 = #34
+ISSUE_TAREA = {"Cristian": 21, "Julio": 22, "Matias": 23, "Oscar": 24}
 RESPONSABLES = {"H-01": "Julio Jacho", "H-02": "Cristian Ango", "H-03": "Oscar Riofrio", "H-04": "Matias Morales",
                 "H-05": "Oscar Riofrio", "H-06": "Matias Morales", "H-07": "Julio Jacho", "H-08": "Cristian Ango",
                 "H-09": "Julio Jacho", "H-10": "Oscar Riofrio"}
@@ -527,7 +529,7 @@ def tabla_backlog():
     for h in hallazgos_por_prio():
         n = h["id"][2:]
         fs.append([f"**B-{n}**", h["mejora"], h["id"], f"C-{n}", f'**{h["prio"]}**', f'{h["sev"]} · {ETIQ_SEV[h["sev"]]}', ESFUERZO[h["id"]], h["resp"],
-                   f"[B-{n}]({REPO}/issues?q=B-{n})"])
+                   f"[#{ISSUE_N[h['id']]}]({REPO}/issues/{ISSUE_N[h['id']]})"])
     return tabla(["ID", "Mejora", "Hallazgo", "Criterio", "Prioridad", "Severidad", "Esfuerzo", "Responsable", "Issue"], fs)
 
 
@@ -547,16 +549,13 @@ def escribir_criterios():
 
 
 def escribir_backlog():
-    t = f"# Backlog priorizado de mejoras\n\n{AVISO}Cada fila es un GitHub Issue. Los títulos empiezan con el ID (`B-01`…) para encontrarlos con el enlace de la última columna; el texto de cada Issue está en `Fase4-Cierre/issues/` y se publica con `herramientas/crear_issues.ps1`.\n\n"
+    t = f"# Backlog priorizado de mejoras\n\n{AVISO}Cada fila es un GitHub Issue. Los Issues ya están creados en el repositorio (#25 a #34, con el ID `B-01`… en el título); su texto está en `Fase4-Cierre/issues/`. Los Pull Requests los mencionan con `Refs` y no los cierran, porque la mejora en el prototipo todavía no se implementa.\n\n"
     t += "## Regla de prioridad\n\n" + TABLA_PRIO + "\n## Backlog\n\n" + tabla_backlog()
     t += "\nElaborado por: Oscar Riofrio · Fecha: 18/11/2026\n"
     escribir("Fase4-Cierre/Backlog.md", t)
 
 
 def escribir_issues():
-    lineas = ["# Publica los Issues del backlog en GitHub.", "# Requisitos: GitHub CLI (`winget install GitHub.cli`) y `gh auth login`.",
-              "# Uso (desde la raíz del repositorio):  powershell -File herramientas/crear_issues.ps1", "$ErrorActionPreference = 'Stop'",
-              f"$repo = 'Sebasjach21/Ape6-IHC'"]
     for h in hallazgos_por_prio():
         n = h["id"][2:]
         comp, cambio, est, acept = CRITERIOS[h["id"]]
@@ -568,8 +567,6 @@ def escribir_issues():
                   f"## Criterio de aceptación\n\n- [ ] {acept}\n\n"
                   f"## Trazabilidad\n\nMatriz: `resultados/matriz-hallazgos.md` · Criterios: `Fase4-Cierre/Criterios_Tecnicos.md` · Backlog: `Fase4-Cierre/Backlog.md`\n")
         escribir(f"Fase4-Cierre/issues/B-{n}.md", f"Título del Issue: B-{n} · {h['titulo']} ({h['prio']})\n\n" + cuerpo)
-        lineas.append(f"gh issue create --repo $repo --title \"B-{n} · {h['titulo']} ({h['prio']})\" --body-file \"Fase4-Cierre/issues/B-{n}.md\"")
-    escribir("herramientas/crear_issues.ps1", "\n".join(lineas))
 
 
 # =====================================================================
@@ -684,7 +681,9 @@ def escribir_readme():
     t += "### 8.4 Criterios técnicos\n\n" + tabla_criterios() + "\nVersión independiente: [`Fase4-Cierre/Criterios_Tecnicos.md`](Fase4-Cierre/Criterios_Tecnicos.md).\n\n"
     # 8.5
     t += "### 8.5 Backlog priorizado (GitHub Issues)\n\n" + TABLA_PRIO + "\n" + tabla_backlog()
-    t += "\nLos Issues se publican con [`herramientas/crear_issues.ps1`](herramientas/crear_issues.ps1) a partir de los textos de [`Fase4-Cierre/issues/`](Fase4-Cierre/issues/).\n\n"
+    t += "\nLos 10 Issues de mejora están publicados (#25 a #34); su texto está en [`Fase4-Cierre/issues/`](Fase4-Cierre/issues/). Además hay un Issue de tarea por integrante, que cierra su Pull Request:\n\n"
+    t += tabla(["Integrante", "Issue de tarea", "Rama"], [[NOMBRES[k], f"[#{v}]({REPO}/issues/{v})", f"`{k.lower()}/f3-f4`"] for k, v in ISSUE_TAREA.items()])
+    t += "\n"
     t += "## 9. Evidencias y entregables\n\n"
     t += tabla(["Entregable", "Ubicación"], [
         ["Evidencias de la evaluación heurística", "`resultados/heuristica-cristian.md`, `-julio`, `-matias`, `-oscar`, `-consolidado`"],
@@ -700,7 +699,7 @@ def escribir_readme():
         ["`Fase1-Planificacion/`", "Plan, consentimiento, tareas y hoja de observación"], ["`Fase2-Pilotaje/`", "Verificación, guion, ajustes, comparación y plantillas del pilotaje"],
         ["`Fase3-Aplicacion/`", "Ajuste post-pilotaje, siete tareas y guion V2"], ["`Fase4-Cierre/`", "Criterios técnicos, backlog y textos de los Issues"],
         ["`resultados/`", "Heurísticas E1–E4, sesiones P1–P3, métricas, matriz y triangulación"], ["`datos/`", "Mediciones de las sesiones (fuente de las tablas)"],
-        ["`herramientas/`", "`generar_fase3_4.py`, `crear_issues.ps1`, `md_a_pdf.py`"], ["`docs/`", "Conclusiones"], ["`Evidencias_Colaboracion/`", "Registro de aportes"],
+        ["`herramientas/`", "`generar_fase3_4.py`, `md_a_pdf.py`"], ["`docs/`", "Conclusiones"], ["`Evidencias_Colaboracion/`", "Registro de aportes"],
     ])
     t += "\n## 11. Trabajo colaborativo\n\n- Cada integrante trabajó en su propia rama (`cristian/f3-f4`, `julio/f3-f4`, `matias/f3-f4`, `oscar/f3-f4`), con commits propios.\n- Cada rama se integra a `main` mediante un Pull Request revisado por otro integrante.\n- El detalle de quién hizo qué está en [`Evidencias_Colaboracion/Registro_Aportes.md`](Evidencias_Colaboracion/Registro_Aportes.md).\n\n"
     t += "## 12. Conclusiones\n\n"
