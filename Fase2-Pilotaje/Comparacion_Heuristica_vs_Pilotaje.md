@@ -1,24 +1,22 @@
-# Comparación: evaluación heurística individual vs. pilotaje (simulado)
+# Comparación: evaluación heurística individual vs. pilotaje
 
-> ⚠ **DATOS SIMULADOS — NO SON DATOS REALES DEL PILOTAJE.** Este archivo se llenó con valores de simulación para practicar el procedimiento y el cálculo. Antes de la entrega se deben reemplazar por los datos reales de las sesiones.
-
-La columna del pilotaje se llenó con los datos simulados. Las columnas de los cuatro evaluadores quedan **pendientes**: la evaluación heurística es individual y se hace mirando el prototipo, no se simula.
+> **PLANTILLA SIN DATOS.** Cada evaluador llena su columna a partir de su propio archivo en `Evaluaciones_Heuristicas/`; la columna del pilotaje, desde `Participantes/`. La evaluación heurística es individual: no se copia ni se simula.
 
 ## 1. Cruce de problemas
 
+Marcar «Sí» / «No» en cada celda. Una fila por problema distinto detectado por cualquier método.
+
 | # | Problema | Heurística | Cristian | Julio | Matias | Oscar | Pilotaje (P1 / P2 / P3) | Coincidencia |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | Producto agotado detectado recién al confirmar (T4) | H5, H9 | pendiente | pendiente | pendiente | pendiente | Sí / Sí / Sí | Pendiente |
-| 2 | Producto agotado que parece disponible en el menú (T1) | H1, H4 | pendiente | pendiente | pendiente | pendiente | No / No / Sí | Pendiente |
-| 3 | Vuelta al menú al abrir otro producto (T3) | H3, H6 | pendiente | pendiente | pendiente | pendiente | No / Sí / No | Pendiente |
-| 4 | Salir de la edición de la hora sin guardar (T5) | H1, H5 | pendiente | pendiente | pendiente | pendiente | No / No / Sí | Pendiente |
-| 5 | Problemas que el pilotaje no recorre (buscador, mensajes de error, etc.) | — | pendiente | pendiente | pendiente | pendiente | No aplica | Pendiente |
+| 1 | | | | | | | | |
+
+Coincidencia: **Ambos** (heurística + pilotaje), **Solo pilotaje** o **Solo heurística**.
 
 ## 2. Lectura del cruce
 
-- Problemas en **ambos** métodos: pendiente.
-- Problemas **solo del pilotaje**: pendiente de confirmar con las heurísticas.
-- Problemas **solo de la heurística**: pendiente.
-- Problemas vistos por **varios evaluadores**: pendiente.
+- Problemas en **ambos** métodos:
+- Problemas **solo del pilotaje**:
+- Problemas **solo de la heurística**:
+- Problemas vistos por **varios evaluadores**:
 
 Elaborado por: Oscar Riofrio · Fecha: ______

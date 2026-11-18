@@ -84,7 +84,7 @@ El protocolo de la Fase 1 se considera listo para pasar a la Fase 2 (prueba con 
 ## Lista de entrega de la Fase 1
 
 - [x] Plan con objeto, pregunta, métodos, participantes, métricas, reglas, roles, ética y criterios de validación (este documento)
-- [ ] Consentimiento informado anonimizado — `Consentimiento_Informado.md`
-- [ ] Seis tareas con meta, tiempo máximo, criterio de éxito y respuesta correcta — `Seis_Tareas.md`
-- [ ] Hoja de observación con el SUS — `Hoja_Observacion_SUS.md`
-- [ ] Todo subido al repositorio del grupo, con commits de cada integrante
+- [x] Consentimiento informado anonimizado — `Consentimiento_Informado.md`
+- [x] Seis tareas con meta, tiempo máximo, criterio de éxito y respuesta correcta — `Seis_Tareas.md`
+- [x] Hoja de observación con el SUS — `Hoja_Observacion_SUS.md`
+- [x] Todo subido al repositorio del grupo, con commits de cada integrante

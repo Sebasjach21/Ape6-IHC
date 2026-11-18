@@ -2,7 +2,7 @@
 
 Responsable de esta parte: **Matias Morales** ([@MatiusJBG](https://github.com/MatiusJBG))
 
-Se usa una hoja por participante. Copiar esta plantilla y llenar una por cada código (P1, P2, P3) durante la Fase 2.
+Se usa una hoja por participante. Si un tiempo no se tomó en vivo, escribir «no registrado» (no estimarlo). **Pista única (leer textual):** «Vuelve a leer la tarea y revisa las opciones que tienes en pantalla». Copiar esta plantilla y llenar una por cada código (P1, P2, P3) durante la Fase 2.
 
 ## Datos de la sesión
 
@@ -10,7 +10,14 @@ Se usa una hoja por participante. Copiar esta plantilla y llenar una por cada c�
 | --- | --- |
 | Código del participante | P\_ |
 | Fecha | |
-| Perfil (estudiante / docente / personal) | |
+| Edad (mayor de edad) | |
+| Carrera | |
+| ¿Es estudiante de la UTA? | Sí / No |
+| ¿Conoce el prototipo o las tareas? (si sí, no cumple el perfil) | Sí / No |
+| ¿Cumple el perfil? | Sí / No |
+| ¿Acepta grabación de la pantalla? | Sí / No |
+| Hora de inicio / fin · duración (min) | |
+| Fallos técnicos del prototipo | |
 | Estado inicial comprobado (menú con stock inicial, pedido vacío) | Sí / No |
 | Moderador | |
 | Registro de métricas | |
